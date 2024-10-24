@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhbaar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">
+            <h1>Akhbaar</h1>
+        </div>
+
+        <form>
+            <input id="search_here" type="text" placeholder="Topics">
+            <button id="search_button"><img src="search.png" alt="Search"></button>
+        </form>
+
+        <div class="dropdowns" >
+            <select name="items" id = "lang-dropdown">Lang.
+                <option value="en" >English</option>
+                <option value="es" >Spanish</option>
+                <option value="he" >Hindi</option>
+            </select>
+    
+            <select name="sort" id="sort-dropdown">
+                <option value="relevancy">Relevancy</option>
+                <option value="popularity">Popularity</option>
+                <option value="publishedAt">Published At</option>
+            </select>
+        </div>
+    </div>
+
+    <main>
+        <div class="cards-container flex" id="cards-container">
+        </div>
+    </main>
+    
+    <template id="cardTemplate">
+        <div class="template">
+            <div class="figure">
+                <img class="figure-img" src="https://via.placeholder.com/400x250" alt="Article Image">
+                <span class="source">Source</span>
+            </div>
+    
+            <div class="text-content">
+                <h2 class="title">Title</h2><br>
+                <div class="auth">
+                    <h4 class="author">Author |</h4>
+                    <h4 class="date">| Date</h4>
+                </div><br>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero officiis, minus libero vel illum quia nisi unde doloremque excepturi provident assumenda tempora eligendi sapiente magni animi dolores, fuga repellat?
+                </p>
+            </div>
+        </div>      
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
